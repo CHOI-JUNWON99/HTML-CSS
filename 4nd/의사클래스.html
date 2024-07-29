@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사요소</title>
+    <style>
+        .menu{
+            padding:10px;
+            border-bottom: 1px solid black;
+        }
+
+        .menu > li{
+            display: inline-block;
+            width: 120px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .menu a {
+            display: inline-block; /* 추가된 코드 */
+            text-decoration: none; /* 링크의 밑줄 제거 */
+        }
+
+        a:hover{
+            color: white;
+            background-color: gray;
+        }
+
+        a:active{
+            color: white;
+            background-color: black;
+        }
+
+        li:nth-child(2n-1){
+            font-size: 20px;
+        }
+
+        a::first-letter{
+            color:rgb(255, 255, 255);
+        }
+        
+        a::after{
+            content: "보기";
+            color:yellow;
+        }
+
+        a::before{
+            content: "보기";
+            color:rgb(0, 201, 43);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+        <li><a href="#">웹툰</a></li>
+    </ul>
+</body>
+</html>

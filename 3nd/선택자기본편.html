@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 기본편</title>
+    <style>
+        *{
+            color: brown;
+        }
+        /*
+        선택자 우선순위: 쓰여진 순서랑 관계없이 적용되는 순서
+        1.아이디 선택자
+        2.클래스 선택자
+        3.태그 선택자
+        */
+        li{
+            color: blue;
+        }
+        .hiphop{
+            color: aqua;
+        }
+        #jaz{
+            color: chartreuse;
+        }
+        h2, p, li{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>노래의 장르</h2>
+    <p>무척 다양한 장르가 존재합니다</p>
+    <ul>
+        <li class="m1">발라드</li>
+        <li class="m2">팝송</li>
+        <li class="hiphop" id="hip">힙합</li>
+        <li id="jaz">재즈</li>
+        <li id="chaoxian">사극풍</li>
+    </ul>
+</body>
+</html>

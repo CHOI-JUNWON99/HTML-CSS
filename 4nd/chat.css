@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body{
+    width: 320px;
+    height: 650px;
+    margin: 30px;
+    border: 10px solid darkgrey;
+    border-radius: 10px;
+}
+
+.container{
+    height: 100%;
+    background-color: cornsilk;
+}
+
+/*스크린 크기 조절*/
+.chat-screen{
+    height: calc(100%-120px);
+}
+
+/*유저 정보*/
+.chat-screen_bar{
+
+}
+
+.user{
+    background-color:  rgb(224, 224, 224);
+    padding: 16px;
+    height: 80px;
+}
+
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.user_pic > img{
+    width:50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.user_column{
+    float:left;
+}
+
+.user_name{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.user_count{
+    margin:0px;
+    font-size: 12px;
+    color: grey;
+    position: relative;
+    left: 5px;
+}
+
+.main_chat{
+    width: 100%;
+    height: 500px;
+}
+
+.user_chat{
+    width: 300px;
+    height: 400px;
+}
+
+.user_chat > textarea{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(234, 250, 250);
+    resize: none;
+    border: none;
+}
+
+.chat-form{
+    text-align: center;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+.chat-form_field{
+    height: 50px;
+}
+
+.chat-form_msg{
+    width: 246px;
+    height: 40px;
+    border: none;
+    resize: none;
+    font-size: 12px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.chat-form_bt{
+    width: 40px;
+    height: 44px;
+    border: none;
+    position: relative;
+    bottom: 15px;
+    align-items: center;
+    margin-right: 2px;
+    color: black;
+}

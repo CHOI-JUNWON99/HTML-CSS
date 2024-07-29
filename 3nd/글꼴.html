@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        html{
+            font-size: 20px;
+        }
+
+        body{
+            font-size: 32px;
+        }
+
+        #first{
+            font-size: 0.5em;
+            /*부모 size body 32px에 0.5곱한 크기*/
+            /*부모 size html 20px에 0.5곱한 크기*/
+
+            line-height: 50px;
+
+            text-align:center;
+            text-align: justify; /*텍스트가 양 끝으로 붙는다*/
+        }
+    </style>
+</head>
+<body>
+    <p>에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+    <p id="first">에스프레소와 물을 섞으면 아메리카노가 됩니다.</p>
+</body>
+</html>

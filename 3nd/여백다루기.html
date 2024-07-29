@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델이란</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+
+            margin: 10px 20px 30px 40px;
+            /*top bottom left right*/
+            padding: 10px 20px 30px 40px;
+
+            box-sizing: content-box;
+            /*width랑 height가 순수하게 콘텐츠 영역 -> 박스크기 커짐*/
+
+            box-sizing: border-box;
+            /*width랑 height가 마진이랑 패딩을 포함해서 콘텐츠영역 줄어듬 -> 크기고정*/
+        }
+    </style>
+</head>
+<body>
+    <div>헌진영 - 흐린 기억 속의 그대</div>
+</body>
+</html>

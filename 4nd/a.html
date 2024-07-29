@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3행 3열 만들기</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        /*display 기본 셋팅 flex-direction: row;flex-wrap: nowrap;*/
+        #container{
+            display: flex;
+            width: 930px;
+            height: 100%;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+
+        .item{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+    
+</body>
+</html>
