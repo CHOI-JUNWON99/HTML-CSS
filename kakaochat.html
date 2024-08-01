@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅방 만들기</title>
+    <link href="kakaochat.css" rel="stylesheet">
+    <link href="kakaotext.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container1"> 
+        <header class="chat-screen">
+            <section class="chat-screen_bar">
+                <div class="user">
+                    <div class="user_column">
+                        <div class="user_pic">
+                            <img src="../image/chat1.png" alt="짱구 사진" id="chatpic1">
+                        </div>                        
+                    </div>
+                    <div class="user_column">
+                        <p class="user_name">짱구</p>
+                        <p class="user_count">2</p>                     
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="main_chat">
+            <div class="user_chat">
+                <ul class="chat-screen_texts" id="chat1">
+                    <!-- 입력된 채팅 <li> 태그 이용하여 배치 -->
+                </ul>
+            </div>
+        </main>
+
+        <form class="chat-form" onsubmit="sendMessage('chat1', 'chat2'); return false;">
+            <section class="chat-form_field">
+                <textarea class="chat-form_msg" id="message1"></textarea>
+                <input type="submit" value="전송" class="chat-form_bt">
+            </section>
+        </form>
+    </div>
+    
+    <div class="column_bar"></div>
+
+    <div class="container2"> 
+        <header class="chat-screen">
+            <section class="chat-screen_bar">
+                <div class="user">
+                    <div class="user_column">
+                        <div class="user_pic">
+                            <img src="../image/chat2.png" alt="유리 사진" id="chatpic2">
+                        </div>                        
+                    </div>
+                    <div class="user_column">
+                        <p class="user_name">유리</p>
+                        <p class="user_count">2</p>     
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="main_chat">
+            <div class="user_chat">
+                <ul class="chat-screen_texts" id="chat2">
+                    <!-- 입력된 채팅 <li> 태그 이용하여 배치 -->
+                </ul>
+            </div>
+        </main>
+
+        <form class="chat-form" onsubmit="sendMessage('chat2', 'chat1'); return false;">
+            <section class="chat-form_field">
+                <textarea class="chat-form_msg" id="message2"></textarea>
+                <input type="submit" value="전송" class="chat-form_bt">
+            </section>
+        </form>
+    </div>
+
+    <script src="kakaochat.js"></script>
+</body>
+</html>
